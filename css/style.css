@@ -252,7 +252,7 @@ body::before {
   position: relative; border-radius: var(--r-md); overflow: hidden; background: var(--mist);
   aspect-ratio: 4 / 5; max-width: 100%; box-shadow: var(--shadow-lg);
 }
-.portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
+.portrait-frame img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
 .portrait-tag {
   position: absolute; left: -18px; bottom: 26px; z-index: 2;
   background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px;
@@ -281,7 +281,7 @@ figcaption, .caption { font-size: .84rem; color: var(--slate); margin-top: 10px;
 .about__body h2 { font-size: var(--t-xl); font-weight: 800; margin: 18px 0 28px; }
 .about__body h2 em { font-style: normal; color: var(--blue); }
 .prose p + p { margin-top: 1.1em; }
-.prose p { font-size: var(--t-md); line-height: 1.75; color: var(--ink-soft); max-width: 62ch; }
+.prose p { font-size: var(--t-md); line-height: 1.75; color: var(--ink-soft); max-width: 62ch; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 .prose strong { color: var(--ink); font-weight: 600; }
 
 .pillars { margin-top: 44px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
@@ -343,7 +343,7 @@ figcaption, .caption { font-size: .84rem; color: var(--slate); margin-top: 10px;
   display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 20px; align-items: start;
 }
 .journey-bridge svg { width: 28px; height: 28px; color: #8fb0ff; }
-.journey-bridge p { font-size: var(--t-md); line-height: 1.65; max-width: 70ch; }
+.journey-bridge p { font-size: var(--t-md); line-height: 1.65; max-width: none; }
 .journey-bridge strong { color: #fff; }
 
 /* Education */
@@ -728,3 +728,58 @@ dialog::backdrop { background: rgba(11, 16, 32, .72); backdrop-filter: blur(4px)
 .p-card .b p { font-size: .88rem !important; color: var(--slate) !important; line-height: 1.5 !important; }
 .planned { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
 .next-prev { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 40px; border-top: 1px solid var(--line); }
+
+
+/* ==========================================================================
+   Background atmosphere — soft color fields, dot grids and pixel clusters
+   ========================================================================== */
+.section, .hero, .contact { position: relative; isolation: isolate; overflow-x: clip; }
+
+/* off-white sections: blue/teal light fields + a faint dot grid */
+.section--paper::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background:
+    radial-gradient(38rem 26rem at 8% 0%, rgba(37, 99, 235, .07), transparent 70%),
+    radial-gradient(34rem 24rem at 96% 100%, rgba(15, 157, 138, .07), transparent 70%),
+    radial-gradient(rgba(100, 116, 139, .16) 1px, transparent 1.4px) 0 0 / 22px 22px;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.55) 100%);
+          mask-image: linear-gradient(180deg, #000 0%, rgba(0,0,0,.55) 100%);
+}
+/* white sections: one soft glow in the upper right */
+.section:not(.section--paper):not(.capstone):not(.contact)::before {
+  content: ""; position: absolute; z-index: -1; pointer-events: none;
+  top: 40px; right: -10vw; width: min(52vw, 640px); aspect-ratio: 1;
+  background: radial-gradient(circle, rgba(37, 99, 235, .07), rgba(15, 157, 138, .04) 45%, transparent 70%);
+}
+/* hero: glow behind the portrait */
+.hero__portrait::before {
+  content: ""; position: absolute; z-index: -1; inset: -12% -18% -8% -14%; pointer-events: none;
+  background:
+    radial-gradient(closest-side at 70% 30%, rgba(37, 99, 235, .18), transparent),
+    radial-gradient(closest-side at 25% 80%, rgba(15, 157, 138, .16), transparent);
+  filter: blur(8px);
+}
+/* pixel cluster beside every section heading (a nod to game dev) */
+.section-head > div { position: relative; }
+.section-head > div::after {
+  content: ""; position: absolute; top: 4px; right: 4%; width: 8px; height: 8px; pointer-events: none;
+  background: var(--blue); opacity: .55; border-radius: 1px;
+  box-shadow: 12px 0 0 rgba(37,99,235,.35), 12px 12px 0 var(--teal), 24px 12px 0 rgba(15,157,138,.35), 0 24px 0 rgba(37,99,235,.2), 36px 24px 0 rgba(37,99,235,.45);
+}
+/* floating code glyphs in the hero and contact sections */
+.hero::after, .contact::after {
+  position: absolute; z-index: -1; pointer-events: none; font-family: var(--f-code); font-weight: 600; line-height: 1;
+  color: rgba(37, 99, 235, .07); white-space: pre;
+}
+.hero::after { content: "{ }"; font-size: clamp(5rem, 14vw, 13rem); right: 2vw; bottom: 4%; }
+.contact::after { content: "</>"; font-size: clamp(5rem, 16vw, 15rem); right: 3vw; top: 12%; color: rgba(15, 157, 138, .08); }
+/* dark bridge card: subtle grid on the right so it never reads empty */
+.journey-bridge { position: relative; overflow: hidden; }
+.journey-bridge::after {
+  content: ""; position: absolute; inset: 0 0 0 55%; pointer-events: none;
+  background-image: linear-gradient(rgba(143,176,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(143,176,255,.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 60%); mask-image: linear-gradient(90deg, transparent, #000 60%);
+}
+.journey-bridge > * { position: relative; z-index: 1; }
+@media (max-width: 760px) { .section-head > div::after { display: none; } }
