@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Justine Mico San Jose</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="Portfolio of Justine Mico San Jose — BS Information Technology student majoring in Game Development at UPHSL, IT Intern at CloudSwyft, and builder of ArcadeCode, an educational pixel-art coding game.">
+  <meta name="author" content="Justine Mico San Jose">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Justine Mico San Jose — IT Student & Aspiring Game Developer">
+  <meta property="og:description" content="Projects, capstone, internship work and experience of an IT student majoring in Game Development.">
+  <meta property="og:image" content="assets/capstone/character-selection.jpg">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#hero" aria-label="Justine Mico San Jose, back to top">
+      <span class="brand__mark">JM</span>
+      <span class="brand__name">Justine Mico <span>San Jose</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#capstone">Capstone</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--dark btn--sm nav__cta" href="https://www.linkedin.com/in/justine-mico-san-jose-74b250168/" target="_blank" rel="noopener">LinkedIn</a>
+    <button class="nav__toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= 1. HERO ================= -->
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <p class="hero__status"><span class="dot" aria-hidden="true"></span> now: <b>building ArcadeCode</b> · interning at CloudSwyft</p>
+
+    <div class="hero__grid">
+      <div>
+        <h1 class="hero__name" id="hero-title">
+          <span class="line"><span>Justine</span></span>
+          <span class="line"><span class="outline">Mico</span></span>
+          <span class="line"><span>San Jose<span class="accent">.</span></span></span>
+        </h1>
+        <p class="hero__roles"><span>IT Student</span><span>Aspiring Game Developer</span><span>Technology Enthusiast</span></p>
+        <p class="hero__intro">Hi, I'm Justine — an Information Technology student majoring in Game Development, with experience in customer service, digital documentation, quality assurance, and creative technology projects. I enjoy exploring technology, developing solutions, and turning ideas into meaningful digital experiences.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#work">Explore my work <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/justine-mico-san-jose-74b250168/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn</a>
+          <!-- Shown automatically once SITE.cv is set in js/main.js -->
+          <a class="btn btn--ghost" href="#" data-cv-link hidden download><svg aria-hidden="true"><use href="#i-download"/></svg> Download CV</a>
+        </div>
+      </div>
+
+      <div class="hero__portrait">
+        <div class="portrait-frame">
+          <img src="assets/images/justine-portrait.jpg" width="638" height="952" alt="Portrait of Justine Mico San Jose in a school uniform, arms crossed, smiling." fetchpriority="high">
+        </div>
+        <div class="portrait-tag"><b>Based in</b>Santa Rosa City, Laguna</div>
+        <p class="portrait-coord" aria-hidden="true"><span>14.31° N, 121.11° E</span><span>PH</span></p>
+      </div>
+    </div>
+
+    <dl class="hero__facts">
+      <div class="fact"><dt>Studying</dt><dd>BS Information Technology<small>Major in Game Development · UPHSL, 2023–2027</small></dd></div>
+      <div class="fact"><dt>Interning</dt><dd>IT Intern<small>CloudSwyft Global Systems, Inc. · since Aug 2026</small></dd></div>
+      <div class="fact"><dt>Serving</dt><dd>SK Secretary<small>Barangay Kanluran · since Dec 2023</small></dd></div>
+      <div class="fact"><dt>Building</dt><dd><a href="projects/capstone.html">ArcadeCode capstone</a><small>UI/UX Developer · educational coding game (group)</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ================= 2. ABOUT ================= -->
+<section class="section section--paper" id="about" aria-labelledby="about-title">
+  <div class="wrap about">
+    <div class="about__photo reveal">
+      <figure>
+        <div class="frame"><img src="assets/images/shs-graduation.jpg" width="561" height="808" loading="lazy" alt="Justine in a blue graduation toga and cap at his Senior High School graduation photo."></div>
+        <figcaption>Senior High graduation, Santa Rosa Science and Technology High School.</figcaption>
+      </figure>
+    </div>
+    <div class="about__body">
+      <span class="eyebrow">About me</span>
+      <h2 id="about-title">I learn best by <em>building</em> things.</h2>
+      <div class="prose reveal">
+        <p>I'm Justine Mico San Jose, a <strong>BS Information Technology student majoring in Game Development</strong> at the University of Perpetual Help System – Laguna.</p>
+        <p>A Unity level, a PHP booking system, a QA test case — that's how I learn. Alongside my studies I've worked in customer experience at Concentrix and iQor, served my community as <strong>SK Secretary of Barangay Kanluran</strong>, and now work as an <strong>IT Intern at CloudSwyft</strong>, where I test and document a live learning platform.</p>
+        <p>That mix taught me to think like a developer and a user at the same time: what the code does, and what the person on the other side of the screen actually needs. I'm still early in my career, and I treat every project and role as a chance to get better at both.</p>
+      </div>
+
+      <div class="pillars reveal">
+        <div class="pillar"><svg aria-hidden="true"><use href="#i-code"/></svg><h3>Developer mindset</h3><p>Unity, C#, PHP and SQL through coursework and my capstone.</p></div>
+        <div class="pillar"><svg aria-hidden="true"><use href="#i-headset"/></svg><h3>Customer-first</h3><p>Frontline experience at Concentrix and iQor.</p></div>
+        <div class="pillar"><svg aria-hidden="true"><use href="#i-users"/></svg><h3>Community leader</h3><p>Secretary of SK ng Barangay Kanluran since 2023.</p></div>
+        <div class="pillar"><svg aria-hidden="true"><use href="#i-palette"/></svg><h3>Creative</h3><p>Canva pubmats, CapCut videos and Blender 3D scenes.</p></div>
+      </div>
+
+      <div class="more-me reveal">
+        <h3>A little more about me</h3>
+        <ul class="interest-row">
+          <li><svg aria-hidden="true"><use href="#i-cpu"/></svg>Technology &amp; innovation</li>
+          <li><svg aria-hidden="true"><use href="#i-gamepad"/></svg>Game development</li>
+          <li><svg aria-hidden="true"><use href="#i-camera"/></svg>Photography</li>
+          <li><svg aria-hidden="true"><use href="#i-plane"/></svg>Traveling</li>
+          <li><svg aria-hidden="true"><use href="#i-ball"/></svg>Volleyball</li>
+          <li><svg aria-hidden="true"><use href="#i-video"/></svg>Creative digital content</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 3. PROFESSIONAL JOURNEY ================= -->
+<section class="section" id="journey" aria-labelledby="journey-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Professional journey</span>
+        <h2 id="journey-title">Where I've worked.</h2>
+      </div>
+      <p>Four roles, most of them at the same time as full-time study. Open any role to see what I do there and what it taught me.</p>
+    </div>
+
+    <ol class="timeline">
+      <li class="tl-item is-current reveal">
+        <div class="tl-when"><b>Aug 2026</b>Present</div>
+        <article class="tl-card">
+          <div class="tl-card__head">
+            <div><h3>IT Intern</h3><p class="org">CloudSwyft Global Systems, Inc.</p></div>
+            <span class="chip chip--teal">Current</span>
+          </div>
+          <p class="summary">QA audit of the LMS website with front-end and back-end test cases, plus CRM and technical documentation, process analysis and research.</p>
+          <button class="tl-toggle" type="button" aria-expanded="false" aria-controls="tl-1"><svg aria-hidden="true"><use href="#i-plus"/></svg>Responsibilities &amp; skills</button>
+          <div class="tl-detail" id="tl-1"><div><div class="cols">
+            <div><h4>What I do</h4><ul><li>Build and maintain the QA Audit Form for the LMS website</li><li>Write and run front-end and back-end test cases</li><li>Draft the outline of the LMS technical documentation</li><li>Document CRM lead workflows and dashboards</li></ul></div>
+            <div><h4>Skills developed</h4><ul><li>Test case design and documentation</li><li>UI evaluation</li><li>Business process analysis</li><li>Working inside a real product team</li></ul></div>
+          </div><p class="tl-link"><a class="text-link" href="projects/cloudswyft.html">Read the internship case study <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p></div></div>
+        </article>
+      </li>
+
+      <li class="tl-item is-current reveal">
+        <div class="tl-when"><b>May 2026</b>Present</div>
+        <article class="tl-card">
+          <div class="tl-card__head">
+            <div><h3>Senior Agent</h3><p class="org">iQor</p></div>
+            <span class="chip chip--teal">Current</span>
+          </div>
+          <p class="summary">Handle customer interactions with accuracy and empathy, and keep account notes and records complete and correct.</p>
+          <button class="tl-toggle" type="button" aria-expanded="false" aria-controls="tl-2"><svg aria-hidden="true"><use href="#i-plus"/></svg>Responsibilities &amp; skills</button>
+          <div class="tl-detail" id="tl-2"><div><div class="cols">
+            <div><h4>What I do</h4><ul><li>Resolve customer concerns on live interactions</li><li>Keep account notes and records accurate</li></ul></div>
+            <div><h4>Skills developed</h4><ul><li>Communication under pressure</li><li>Problem-solving with real users</li><li>Time management alongside full-time study</li></ul></div>
+          </div></div></div>
+        </article>
+      </li>
+
+      <li class="tl-item reveal">
+        <div class="tl-when"><b>Jun 2025</b>May 2026</div>
+        <article class="tl-card">
+          <div class="tl-card__head">
+            <div><h3>Reservation Specialist</h3><p class="org">Concentrix</p></div>
+            <span class="chip">Completed</span>
+          </div>
+          <p class="summary">Handled bookings, changes and customer inquiries, and maintained accurate reservation data under time pressure.</p>
+          <button class="tl-toggle" type="button" aria-expanded="false" aria-controls="tl-3"><svg aria-hidden="true"><use href="#i-plus"/></svg>Responsibilities &amp; skills</button>
+          <div class="tl-detail" id="tl-3"><div><div class="cols">
+            <div><h4>What I did</h4><ul><li>Processed new bookings and changes</li><li>Answered customer inquiries</li><li>Kept reservation records accurate</li></ul></div>
+            <div><h4>Skills developed</h4><ul><li>Customer service</li><li>Data entry accuracy</li><li>Working with booking systems — the same problem space as my Events Place Booking System</li></ul></div>
+          </div></div></div>
+        </article>
+      </li>
+
+      <li class="tl-item is-current reveal">
+        <div class="tl-when"><b>Dec 2023</b>Present</div>
+        <article class="tl-card">
+          <div class="tl-card__head">
+            <div><h3>Secretary</h3><p class="org">Sangguniang Kabataan ng Barangay Kanluran</p></div>
+            <span class="chip chip--teal">Current</span>
+          </div>
+          <p class="summary">Prepare minutes, resolutions and official records, and run social media, pubmats and videos for youth programs.</p>
+          <button class="tl-toggle" type="button" aria-expanded="false" aria-controls="tl-4"><svg aria-hidden="true"><use href="#i-plus"/></svg>Responsibilities &amp; skills</button>
+          <div class="tl-detail" id="tl-4"><div><div class="cols">
+            <div><h4>What I do</h4><ul><li>Minutes, records and resolutions</li><li>Social media announcements</li><li>Pubmats in Canva, videos in CapCut</li><li>Support youth programs and barangay events</li></ul></div>
+            <div><h4>Skills developed</h4><ul><li>Records management</li><li>Leadership and accountability</li><li>Visual communication</li></ul></div>
+          </div><p class="tl-link"><a class="text-link" href="#community">See community work <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p></div></div>
+        </article>
+      </li>
+    </ol>
+
+    <div class="journey-bridge reveal">
+      <svg aria-hidden="true"><use href="#i-link"/></svg>
+      <p><strong>How it connects:</strong> customer-facing work taught me to think about the person using a system; SK records work taught me documentation discipline; the CloudSwyft internship puts both to use on a real product — testing it, writing it down clearly, and finding where it can improve.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 4. EDUCATION ================= -->
+<section class="section section--paper" id="education" aria-labelledby="edu-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Education</span>
+        <h2 id="edu-title">From Santa Rosa to Biñan.</h2>
+      </div>
+      <p>Thirteen years of school in Santa Rosa City, from elementary to a STEM senior high. Now a Game Development major at UPHSL in Biñan, Laguna.</p>
+    </div>
+
+    <div class="edu-grid">
+      <ol class="edu-list">
+        <li class="edu reveal">
+          <div class="edu__years">2023 – 2027</div>
+          <div>
+            <h3>University of Perpetual Help System – Laguna</h3>
+            <p class="deg">Bachelor of Science in Information Technology, Major in Game Development</p>
+            <div class="chips"><span class="chip chip--blue">In progress</span><span class="chip">Capstone: ArcadeCode</span><span class="chip">Systems analysis &amp; design</span></div>
+          </div>
+        </li>
+        <li class="edu reveal">
+          <div class="edu__years">2017 – 2023</div>
+          <div>
+            <h3>Santa Rosa Science and Technology High School</h3>
+            <p class="deg">Junior High School and Senior High School, STEM Strand</p>
+            <div class="chips"><span class="chip chip--teal">With Honors (SHS)</span><span class="chip chip--teal">Top 10 (JHS)</span></div>
+          </div>
+        </li>
+        <li class="edu reveal">
+          <div class="edu__years">2010 – 2017</div>
+          <div>
+            <h3>Santa Rosa Elementary School Central II</h3>
+            <p class="deg">Elementary Education</p>
+            <div class="chips"><span class="chip chip--teal">Top 10</span></div>
+          </div>
+        </li>
+      </ol>
+      <div class="edu-photo reveal">
+        <figure>
+          <button type="button" data-lightbox="edu" data-src="assets/images/shs-graduation.jpg" data-caption="Senior High graduation portrait — Santa Rosa Science and Technology High School" aria-label="Enlarge Senior High graduation photo">
+            <img src="assets/images/shs-graduation.jpg" width="561" height="808" loading="lazy" alt="Graduation portrait in a blue toga, Senior High School.">
+          </button>
+          <figcaption>SHS graduation, STEM strand, With Honors.</figcaption>
+        </figure>
+        <div class="placeholder-note"><svg aria-hidden="true"><use href="#i-info"/></svg><span><strong>To add:</strong> diploma, report cards or other academic documents. Drop scans into <code>assets/certificates/</code>.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. ACHIEVEMENTS ================= -->
+<section class="section" id="achievements" aria-labelledby="ach-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow eyebrow--teal">Achievements &amp; credentials</span>
+        <h2 id="ach-title">Recognition along the way.</h2>
+      </div>
+      <p>Academic honors and leadership roles from elementary to senior high.</p>
+    </div>
+
+    <div class="awards">
+      <article class="award reveal">
+        <span class="award__type">Academic</span><h3>With Honors</h3><p>Senior High School, STEM Strand · Santa Rosa Science and Technology High School</p><span class="award__year">SHS · 2023</span>
+      </article>
+      <article class="award reveal">
+        <span class="award__type">Academic</span><h3>Top 10</h3><p>Junior High School · Santa Rosa Science and Technology High School</p><span class="award__year">JHS</span>
+      </article>
+      <article class="award reveal">
+        <span class="award__type">Academic</span><h3>Top 10</h3><p>Elementary · Santa Rosa Elementary School Central II</p><span class="award__year">Elementary · 2017</span>
+      </article>
+      <article class="award reveal">
+        <span class="award__type">Leadership</span><h3>2nd Runner-Up</h3><p>Rotary Youth Leadership Awards (RYLA)</p><span class="award__year">2021</span>
+      </article>
+      <article class="award reveal">
+        <span class="award__type">Leadership</span><h3>Class Secretary</h3><p>Elected class officer</p><span class="award__year">S.Y. 2019–2020</span>
+      </article>
+      <article class="award reveal">
+        <span class="award__type">Leadership</span><h3>Class Treasurer</h3><p>Elected class officer</p><span class="award__year">S.Y. 2021–2022</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 6. SKILLS ================= -->
+<section class="section section--paper" id="skills" aria-labelledby="skills-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Skills &amp; technologies</span>
+        <h2 id="skills-title">What I work with.</h2>
+      </div>
+      <p>No percentages. Each skill shows where I actually used it, tagged <b>Academic</b> (coursework and capstone) or <b>Practical</b> (used at work or for real audiences).</p>
+    </div>
+
+    <div class="skills">
+      <div class="skill-tabs" role="tablist" aria-label="Skill categories" id="skill-tabs"></div>
+      <div class="skill-panel" id="skill-panel" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 7. FEATURED PROJECTS ================= -->
+<section class="section" id="work" aria-labelledby="work-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Featured projects</span>
+        <h2 id="work-title">Selected work, 2024–2026.</h2>
+      </div>
+      <p>Coursework, a group capstone and internship work. Each entry says what my role was and how finished it is.</p>
+    </div>
+
+    <ol class="register">
+      <!-- 01 -->
+      <li class="project reveal">
+        <span class="project__num">01</span>
+        <div>
+          <div class="project__meta"><span class="chip chip--blue">Web system</span><span class="chip">Academic project</span></div>
+          <h3><a href="#" data-case="case-01">Events Place Booking System</a></h3>
+          <p class="project__desc">A web-based system for reserving an events venue. It replaces manual booking with one place to check dates, request reservations and manage records.</p>
+          <dl class="project__facts">
+            <div><dt>Technologies</dt><dd>PHP, MySQL, phpMyAdmin, XAMPP, HTML, CSS, JavaScript</dd></div>
+            <div><dt>My role</dt><dd>Sole developer — designed and built the entire system</dd></div>
+            <div><dt>Status</dt><dd><span class="muted">[Add status]</span></dd></div>
+            <div><dt>Focus</dt><dd>CRUD, relational design, user vs admin roles</dd></div>
+          </dl>
+          <div class="project__actions"><button class="btn btn--dark btn--sm" type="button" data-case="case-01">View project details <svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+        </div>
+        <button class="project__visual" type="button" data-case="case-01" aria-label="Open Events Place Booking System details">
+          <span class="mock" aria-hidden="true">
+            <span class="mock-window">
+              <span class="mock-bar"><i></i><i></i><i></i><span>localhost/events-place/admin</span></span>
+              <span class="mock-body">
+                <span class="mock-row"><span><b>Booking request</b><small>Venue · date · guest count</small></span><span class="status status--wait">Pending</span></span>
+                <span class="mock-row"><span><b>Admin review</b><small>Approve or decline</small></span><span class="status status--ok">Approved</span></span>
+                <span class="mock-row"><span><b>Schedule &amp; records</b><small>MySQL: users · bookings · schedule</small></span><span class="status status--fail">No double-booking</span></span>
+              </span>
+            </span>
+          </span>
+          <span class="tag">Diagram of the booking flow · screenshots to be added</span>
+        </button>
+      </li>
+
+      <!-- 02 -->
+      <li class="project reveal">
+        <span class="project__num">02</span>
+        <div>
+          <div class="project__meta"><span class="chip chip--blue">Game development</span><span class="chip">Unity · C#</span></div>
+          <h3><a href="projects/capstone.html">Unity Game Development</a></h3>
+          <p class="project__desc">My Unity work centres on ArcadeCode, our group capstone: pixel-art characters, side-scrolling movement, interactive answer objects and an in-game HUD, built as playable development builds.</p>
+          <dl class="project__facts">
+            <div><dt>Technologies</dt><dd>Unity, C#, pixel-art sprites</dd></div>
+            <div><dt>My role</dt><dd>UI/UX Developer (group capstone)</dd></div>
+            <div><dt>Status</dt><dd>In development</dd></div>
+            <div><dt>Mechanics</dt><dd>Character select, throw, carry/place, movement course</dd></div>
+          </dl>
+          <div class="project__actions">
+            <button class="btn btn--dark btn--sm" type="button" data-case="case-02">View project details <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <a class="text-link" href="projects/capstone.html">Full capstone page <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <button class="project__visual project__visual--dark" type="button" data-case="case-02" aria-label="Open Unity Game Development details">
+          <img src="assets/capstone/movement-course.jpg" width="1258" height="706" loading="lazy" alt="ArcadeCode movement course: a pixel-art character on a dark city platform with a red laser barrier and a code panel.">
+          <span class="tag">ArcadeCode · Level 1 movement course</span>
+        </button>
+      </li>
+
+      <!-- 03 -->
+      <li class="project reveal">
+        <span class="project__num">03</span>
+        <div>
+          <div class="project__meta"><span class="chip chip--blue">3D modeling</span><span class="chip">Blender</span></div>
+          <h3><a href="#" data-case="case-03">Lantern Scene in Blender</a></h3>
+          <p class="project__desc">A low-key shelf scene with a candle, an oil lantern and a pendant lamp, lit by warm point lights and an emissive globe, with smoke simulation above the flames.</p>
+          <dl class="project__facts">
+            <div><dt>Technologies</dt><dd>Blender: modeling, lighting, smoke domains, timeline</dd></div>
+            <div><dt>My role</dt><dd>Individual project — created everything</dd></div>
+            <div><dt>Status</dt><dd>Scene built · 150-frame timeline</dd></div>
+            <div><dt>Focus</dt><dd>Lighting mood and simulation</dd></div>
+          </dl>
+          <div class="project__actions"><button class="btn btn--dark btn--sm" type="button" data-case="case-03">View project details <svg aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+        </div>
+        <button class="project__visual project__visual--dark" type="button" data-case="case-03" aria-label="Open Blender lantern scene details">
+          <img src="assets/projects/blender-lantern-scene.jpg" width="1292" height="751" loading="lazy" alt="Blender viewport showing a dim shelf with a candle, an oil lantern and a glowing pendant globe.">
+          <span class="tag">Blender viewport · lantern scene</span>
+        </button>
+      </li>
+
+      <!-- 04 -->
+      <li class="project reveal">
+        <span class="project__num">04</span>
+        <div>
+          <div class="project__meta"><span class="chip chip--teal">Internship</span><span class="chip">Quality assurance</span></div>
+          <h3><a href="projects/cloudswyft.html#qa">CloudSwyft LMS Website QA</a></h3>
+          <p class="project__desc">A QA and UI audit of CloudSwyft's learning-management website: map the features, write test cases, run them, log findings and outline the technical documentation.</p>
+          <dl class="project__facts">
+            <div><dt>Tools</dt><dd>Google Sheets (QA Audit Form), the LMS platform</dd></div>
+            <div><dt>My role</dt><dd>Built and maintain the QA Audit Form; drafting the tech doc outline</dd></div>
+            <div><dt>Status</dt><dd>Ongoing</dd></div>
+            <div><dt>Coverage</dt><dd>Front-end and back-end test cases</dd></div>
+          </dl>
+          <div class="project__actions">
+            <button class="btn btn--dark btn--sm" type="button" data-case="case-04">View project details <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <a class="text-link" href="projects/cloudswyft.html">Internship page <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <button class="project__visual" type="button" data-case="case-04" aria-label="Open CloudSwyft LMS QA details">
+          <img src="assets/projects/cloudswyft-qa-audit-form.jpg" width="1831" height="1256" loading="lazy" alt="QA Audit Form in Google Sheets with front-end test cases, statuses, severity and recommendations." style="object-position:0 0">
+          <span class="tag">QA Audit Form · Google Sheets</span>
+        </button>
+      </li>
+
+      <!-- 05 -->
+      <li class="project reveal">
+        <span class="project__num">05</span>
+        <div>
+          <div class="project__meta"><span class="chip chip--teal">Internship</span><span class="chip">Documentation</span></div>
+          <h3><a href="projects/cloudswyft.html#crm">CloudSwyft CRM Documentation</a></h3>
+          <p class="project__desc">Documenting how leads move through CloudSwyft's CRM, a Power Apps canvas app, so the business team shares one clear picture of the process, from the lead workflow to the dashboard.</p>
+          <dl class="project__facts">
+            <div><dt>Covers</dt><dd>Lead workflow, Dataverse-related tables and fields, dashboards &amp; KPIs</dd></div>
+            <div><dt>Platform</dt><dd>Microsoft Power Apps, Dataverse</dd></div>
+            <div><dt>My role</dt><dd>Documentation and process evaluation</dd></div>
+            <div><dt>Status</dt><dd>Ongoing</dd></div>
+            <div><dt>Output</dt><dd>Workflow docs, improvement points</dd></div>
+          </dl>
+          <div class="project__actions">
+            <button class="btn btn--dark btn--sm" type="button" data-case="case-05">View project details <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <a class="text-link" href="projects/cloudswyft.html#crm">Internship page <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <button class="project__visual" type="button" data-case="case-05" aria-label="Open CloudSwyft CRM documentation details">
+          <img src="assets/projects/cloudswyft-crm-dashboard.jpg" width="1600" height="907" loading="lazy" alt="CloudSwyft CRM dashboard in Power Apps showing leads, yearly on-boarded clients, response time, click-through rate and handling time panels." style="object-position:0 0">
+          <span class="tag">CRM dashboard · Power Apps · lead details blurred</span>
+        </button>
+      </li>
+
+      <!-- 06 -->
+      <li class="project reveal">
+        <span class="project__num">06</span>
+        <div>
+          <div class="project__meta"><span class="chip chip--teal">Internship</span><span class="chip">eBook · Digital literacy</span></div>
+          <h3><a href="projects/cloudswyft.html#ebook">Evaluating the Sites That You See</a></h3>
+          <p class="project__desc">An illustrated, 10-page interactive eBook for CloudSwyft. <em>Think Before You Trust: Kai's Online Search</em> follows a student checking who wrote a website, when, and where its information comes from.</p>
+          <dl class="project__facts">
+            <div><dt>Format</dt><dd>Interactive web eBook, 10 pages, page navigation and audio narration</dd></div>
+            <div><dt>My role</dt><dd>Author</dd></div>
+            <div><dt>Tool</dt><dd>Inkbug</dd></div>
+            <div><dt>Topic</dt><dd>Checking author, date and sources; comparing sites</dd></div>
+          </dl>
+          <div class="project__actions">
+            <button class="btn btn--dark btn--sm" type="button" data-case="case-06">View project details <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <a class="text-link" href="projects/cloudswyft.html#ebook">Internship page <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <button class="project__visual" type="button" data-case="case-06" aria-label="Open eBook details">
+          <img src="assets/projects/cloudswyft-ebook-cover.jpg" width="1400" height="1050" loading="lazy" alt="eBook cover: a boy in a blue hoodie studying a website on a laptop under the title Evaluating the Sites That You See." style="object-position:50% 30%">
+          <span class="tag">Cover · page 1 of 10</span>
+        </button>
+      </li>
+
+      <!-- 07 -->
+      <li class="project reveal">
+        <span class="project__num">07</span>
+        <div>
+          <div class="project__meta"><span class="chip chip--teal">Internship</span><span class="chip">Marketing proposal</span></div>
+          <h3><a href="projects/cloudswyft.html#rewards">Beyond Transactions: 33 Rewards System</a></h3>
+          <p class="project__desc">A 35-slide proposal for CloudSwyft Marketing on integrating the 33 Rewards System across CloudSwyft's programs, from six reward categories to a five-phase implementation roadmap.</p>
+          <dl class="project__facts">
+            <div><dt>Audience</dt><dd>CloudSwyft Marketing</dd></div>
+            <div><dt>My role</dt><dd>Author of the proposal</dd></div>
+            <div><dt>Tool</dt><dd>Canva</dd></div>
+            <div><dt>Status</dt><dd>Proposal, dated 23 October 2026</dd></div>
+          </dl>
+          <div class="project__actions">
+            <button class="btn btn--dark btn--sm" type="button" data-case="case-07">View project details <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <a class="text-link" href="projects/cloudswyft.html#rewards">Internship page <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+        <button class="project__visual" type="button" data-case="case-07" aria-label="Open 33 Rewards System proposal details">
+          <img src="assets/projects/cloudswyft-rewards-cover.jpg" width="1600" height="900" loading="lazy" alt="Proposal cover: Beyond Transactions — Integrating the 33 Rewards System Across CloudSwyft Programs.">
+          <span class="tag">Cover · slide 1 of 35</span>
+        </button>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= 8. CAPSTONE ================= -->
+<section class="section capstone" id="capstone" aria-labelledby="cap-title">
+  <div class="wrap">
+    <div class="bay reveal">
+      <div class="bay__head">
+        <div>
+          <span class="eyebrow eyebrow--light">Featured capstone · group project · 4th-year BSIT</span>
+          <h2 id="cap-title">ArcadeCode: learning to code through play.</h2>
+        </div>
+        <p>An educational pixel-art coding game. Players run and jump through a side-scrolling city and clear each route by solving programming challenges built into the level itself.</p>
+      </div>
+
+      <button class="bay__shot" type="button" id="bay-shot" data-lightbox="cap" data-src="assets/capstone/character-selection.jpg" data-caption="Choose Your Coder — character selection between Maya and Kai, with Red or White uniform options">
+        <img id="bay-img" src="assets/capstone/character-selection.jpg" width="1258" height="707" loading="lazy" alt="ArcadeCode character selection screen: Maya and Kai cards with outfit options and a large sprite preview.">
+      </button>
+      <p class="bay__caption" id="bay-cap">New Campaign · Choose Your Coder — Maya or Kai, Red or White uniform.</p>
+      <div class="bay__thumbs" role="group" aria-label="Capstone screenshots">
+        <button class="bay__thumb" type="button" aria-current="true" data-src="assets/capstone/character-selection.jpg" data-cap="New Campaign · Choose Your Coder — Maya or Kai, Red or White uniform." data-alt="ArcadeCode character selection screen with Maya and Kai."><img src="assets/capstone/character-selection.jpg" alt="" loading="lazy"><span>Character select</span></button>
+        <button class="bay__thumb" type="button" data-src="assets/capstone/basket-throw-challenge.jpg" data-cap="Stage 1 “The First Line” · Which type stores a fractional speed? Throw into A int, B float or C string." data-alt="Basket throw challenge asking which type stores a fractional speed."><img src="assets/capstone/basket-throw-challenge.jpg" alt="" loading="lazy"><span>Data-type challenge</span></button>
+        <button class="bay__thumb" type="button" data-src="assets/capstone/movement-course.jpg" data-cap="Level 1 “Movement Failure” · velocity.x = input * speed; — move left past the signal, then reach the dock." data-alt="Movement course with a laser barrier and code panel."><img src="assets/capstone/movement-course.jpg" alt="" loading="lazy"><span>Movement course</span></button>
+      </div>
+
+      <div class="bay__grid">
+        <div class="bay__cell"><b>Explore</b><h3>Platform levels</h3><p>Move through side-scrolling stages with keyboard and mouse controls.</p></div>
+        <div class="bay__cell"><b>Solve</b><h3>Questions as objects</h3><p>Answer by acting in the world: throwing, carrying, placing, moving.</p></div>
+        <div class="bay__cell"><b>Progress</b><h3>Code Stars &amp; routes</h3><p>Earn Code Stars and advance the route to the next challenge.</p></div>
+      </div>
+
+      <div class="bay__foot">
+        <div class="chips"><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Browser-based build</span><span class="chip">In development</span></div>
+        <p class="code-line"><span class="p">velocity</span>.x = <span class="k">input</span> * <span class="n">speed</span>; <span class="c">// input is -1 or 1</span></p>
+        <a class="btn btn--primary" href="projects/capstone.html">Open the capstone case study <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 9. INTERNSHIP ================= -->
+<section class="section section--paper" id="internship" aria-labelledby="intern-title">
+  <div class="wrap intern">
+    <div>
+      <span class="eyebrow eyebrow--teal">Internship highlight</span>
+      <h2 id="intern-title" style="font-size:var(--t-xl);font-weight:800;margin-top:18px">IT Intern at CloudSwyft Global Systems, Inc.</h2>
+      <p class="lede" style="margin-top:20px">Since August 2026 I've supported CloudSwyft's learning platform and business teams: testing, documenting and analysing how their digital tools work. It's where my coursework in systems analysis meets a live product.</p>
+      <ul class="intern__list">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>LMS website quality assurance</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Website UI evaluation</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Test case documentation</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Technical documentation outline</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>CRM workflow documentation</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Lead management workflows</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Business process evaluation</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Digital platform research</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Educational eBook</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>33 Rewards System proposal</li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg>Brand graphics in Canva</li>
+      </ul>
+      <p style="margin-top:28px"><a class="btn btn--dark" href="projects/cloudswyft.html">Read the internship case study <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+    </div>
+    <article class="intern__card reveal">
+      <button type="button" data-lightbox="intern" data-src="assets/projects/cloudswyft-new-year-greeting.jpg" data-caption="Brand greeting graphic designed in Canva for CloudSwyft" aria-label="Enlarge CloudSwyft greeting graphic">
+        <img src="assets/projects/cloudswyft-new-year-greeting.jpg" width="842" height="673" loading="lazy" alt="Happy New Year greeting graphic in CloudSwyft's blue brand style with fireworks.">
+      </button>
+      <div class="body">
+        <span class="award__type">Work sample</span>
+        <dl class="kv">
+          <dt>Piece</dt><dd>Brand greeting graphic for CloudSwyft</dd>
+          <dt>Tool</dt><dd>Canva</dd>
+          <dt>Other tools</dt><dd>Google Sheets (QA Audit Form), LMS &amp; CRM platforms</dd>
+        </dl>
+        <p class="muted" style="font-size:.88rem">Client data and CRM records are not published here.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 10. COMMUNITY ================= -->
+<section class="section" id="community" aria-labelledby="comm-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Leadership &amp; community</span>
+        <h2 id="comm-title">SK Secretary, Barangay Kanluran.</h2>
+      </div>
+      <p>Since December 2023 I've kept the Sangguniang Kabataan's records and helped it talk to the youth of Kanluran — on paper, on social media and at events.</p>
+    </div>
+    <div class="community">
+      <ul class="duties reveal">
+        <li><svg aria-hidden="true"><use href="#i-doc"/></svg><div><b>Records &amp; resolutions</b><span>Minutes, official records and resolutions</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-clipboard"/></svg><div><b>Administrative documentation</b><span>Keeping SK paperwork complete and organized</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-megaphone"/></svg><div><b>Social media management</b><span>Announcements and program updates</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-palette"/></svg><div><b>Pubmats &amp; video</b><span>Designed in Canva, edited in CapCut</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-calendar"/></svg><div><b>Program coordination</b><span>Youth programs and barangay events</span></div></li>
+        <li><svg aria-hidden="true"><use href="#i-users"/></svg><div><b>Youth development</b><span>Orientation for newly elected SK officials, Baguio City</span></div></li>
+      </ul>
+      <div class="mosaic reveal" role="group" aria-label="SK photos and pubmats">
+        <button class="tile m-a" type="button" data-lightbox="sk" data-src="assets/community/sk-orientation-baguio.jpg" data-caption="SK officials’ orientation “Enabling Meaningful Youth Participation”, Baguio City"><img src="assets/community/sk-orientation-baguio.jpg" alt="Group of SK officials in matching jerseys at the orientation in Baguio City." loading="lazy"><span class="lbl">SK officials’ orientation, Baguio City</span></button>
+        <button class="tile m-b" type="button" data-lightbox="sk" data-src="assets/community/pubmat-accomplishments.jpg" data-caption="Accomplishments pubmat for SK Barangay Kanluran — designed in Canva"><img src="assets/community/pubmat-accomplishments.jpg" alt="Pink accomplishments pubmat listing SK programs and beneficiaries." loading="lazy"><span class="lbl">Accomplishments pubmat</span></button>
+        <button class="tile m-c" type="button" data-lightbox="sk" data-src="assets/community/with-fellow-sk-official.jpg" data-caption="With a fellow SK official"><img src="assets/community/with-fellow-sk-official.jpg" alt="Justine taking a selfie with a fellow SK official." loading="lazy"><span class="lbl">With a fellow SK official</span></button>
+        <button class="tile m-d" type="button" data-lightbox="sk" data-src="assets/community/pubmat-educational-assistance.jpg" data-caption="Educational Assistance Program announcement pubmat"><img src="assets/community/pubmat-educational-assistance.jpg" alt="Educational Assistance Program announcement graphic with date and venue." loading="lazy"><span class="lbl">Educational Assistance Program</span></button>
+        <button class="tile m-e" type="button" data-lightbox="sk" data-src="assets/community/pubmat-pamaskong-handog-2025.jpg" data-caption="Pamaskong Handog 2025 — kids edition pubmat"><img src="assets/community/pubmat-pamaskong-handog-2025.jpg" alt="Pamaskong Handog 2025 Christmas program graphic." loading="lazy"><span class="lbl">Pamaskong Handog 2025</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 11. INTERESTS ================= -->
+<section class="section section--paper" id="interests" aria-labelledby="int-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Beyond work</span>
+        <h2 id="int-title">Off the clock.</h2>
+      </div>
+      <p>Gaming is what pulled me toward game development. Design and photography keep my eye for detail sharp.</p>
+    </div>
+    <div class="interests">
+      <article class="int-card int-card--photo i-1 reveal">
+        <button type="button" data-lightbox="me" data-src="assets/personal/ccs-volleyball-team.jpg" data-caption="With the CCS volleyball team" aria-label="Enlarge volleyball team photo">
+          <img src="assets/personal/ccs-volleyball-team.jpg" alt="The CCS volleyball team posing on an indoor court in matching uniforms." loading="lazy">
+        </button>
+        <div class="over"><h3>Volleyball</h3><p>With the CCS volleyball team.</p></div>
+      </article>
+      <article class="int-card int-card--photo i-2 reveal">
+        <button type="button" data-lightbox="me" data-src="assets/personal/congratulatory-banner-design.jpg" data-caption="Congratulatory banner — creative design sample" aria-label="Enlarge banner design">
+          <img src="assets/personal/congratulatory-banner-design.jpg" alt="Congratulatory graduation banner design in blue and white." loading="lazy" style="min-height:220px">
+        </button>
+        <div class="over"><h3>Creative design</h3><p>Congratulatory banner, a design sample.</p></div>
+      </article>
+      <div class="int-mini">
+        <article class="int-card reveal"><svg aria-hidden="true"><use href="#i-camera"/></svg><h3>Photography</h3><p>Noticing light and framing.</p></article>
+        <article class="int-card reveal"><svg aria-hidden="true"><use href="#i-plane"/></svg><h3>Traveling</h3><p>New places, new perspectives.</p></article>
+        <article class="int-card reveal"><svg aria-hidden="true"><use href="#i-gamepad"/></svg><h3>Gaming</h3><p>Where the interest in game dev started.</p></article>
+        <article class="int-card reveal"><svg aria-hidden="true"><use href="#i-cpu"/></svg><h3>Technology</h3><p>Trying new tools and platforms — this site included.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 12. CONTACT ================= -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h2 id="contact-title">Have a project or opportunity in mind? <span>Let's connect.</span></h2>
+    <div class="contact__grid">
+      <a class="c-card" href="https://www.linkedin.com/in/justine-mico-san-jose-74b250168/" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-linkedin"/></svg><b>LinkedIn</b><span>in/justine-mico-san-jose</span>
+      </a>
+      <div class="c-card" id="contact-email">
+        <svg aria-hidden="true"><use href="#i-mail"/></svg><b>Email</b><span class="pending">[Insert email]</span>
+      </div>
+      <div class="c-card" id="contact-github">
+        <svg aria-hidden="true"><use href="#i-github"/></svg><b>GitHub</b><span class="pending">[Insert GitHub profile]</span>
+      </div>
+      <div class="c-card">
+        <svg aria-hidden="true"><use href="#i-pin"/></svg><b>Location</b><span>Santa Rosa City, Laguna, Philippines</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span data-year>2026</span> Justine Mico San Jose. Built with HTML, CSS and vanilla JavaScript.</p>
+    <p>Psst — press <kbd>←</kbd> <kbd>→</kbd> <kbd>space</kbd> on this page.</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top"><svg aria-hidden="true"><use href="#i-up"/></svg></button>
+
+<!-- ================= CASE STUDIES (expandable) ================= -->
+<template id="case-01">
+  <span class="eyebrow">Project 01 · Web system</span>
+  <h2 style="margin-top:14px">Events Place Booking System</h2>
+  <p style="margin-top:14px">A web-based system for reserving an events venue — replacing manual booking with a single place to check dates, request reservations and manage records.</p>
+  <dl class="case__facts">
+    <div><dt>Type</dt><dd>PHP web application</dd></div>
+    <div><dt>Stack</dt><dd>PHP · MySQL · XAMPP</dd></div>
+    <div><dt>My role</dt><dd>Sole developer</dd></div>
+    <div><dt>Status</dt><dd class="muted">[Add status]</dd></div>
+  </dl>
+  <h3>Objectives</h3>
+  <ul class="ticks"><li>Prevent double bookings</li><li>Speed up booking requests</li><li>Keep booking records organized</li></ul>
+  <h3>How it works</h3>
+  <div class="flow">
+    <div class="flow__lane"><b>User</b><ol><li>Browse venue and available dates</li><li>Submit a booking request</li><li>Track booking status</li></ol></div>
+    <div class="flow__lane"><b>Administrator</b><ol><li>Review incoming requests</li><li>Approve or decline</li><li>Manage schedules and records</li></ol></div>
+  </div>
+  <h3>Database</h3>
+  <p>A MySQL database (managed in phpMyAdmin, run locally on XAMPP) holds users, bookings and the venue schedule.</p>
+  <h3>Technologies</h3>
+  <div class="chips"><span class="chip">PHP</span><span class="chip">MySQL</span><span class="chip">phpMyAdmin</span><span class="chip">XAMPP</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+  <h3>My role</h3>
+  <p>I built the whole system myself: the interface, the booking flow, the admin side and the database.</p>
+  <h3>Key learnings</h3>
+  <p>CRUD operations, relational database design and role-based access for users and admins.</p>
+  <h3>Screenshots</h3>
+  <div class="placeholder-note"><svg aria-hidden="true"><use href="#i-info"/></svg><span><strong>To add:</strong> website interface, booking form, admin dashboard and phpMyAdmin table screenshots. Save them in <code>assets/projects/booking/</code> and add <code>&lt;figure class="case__img"&gt;</code> blocks here.</span></div>
+</template>
+
+<template id="case-02">
+  <span class="eyebrow">Project 02 · Game development</span>
+  <h2 style="margin-top:14px">Unity Game Development</h2>
+  <p style="margin-top:14px">My Unity work is currently ArcadeCode, our group capstone. The development builds already include a character selection screen, Stage 1 programming challenges, a Level 1 movement course and a refined HUD.</p>
+  <dl class="case__facts">
+    <div><dt>Engine</dt><dd>Unity</dd></div>
+    <div><dt>Language</dt><dd>C#</dd></div>
+    <div><dt>My role</dt><dd>UI/UX Developer</dd></div>
+    <div><dt>Status</dt><dd>In development</dd></div>
+  </dl>
+  <figure class="case__img"><img src="assets/capstone/basket-throw-challenge.jpg" alt="Basket throw challenge in ArcadeCode." loading="lazy"><figcaption>Stage 1 “The First Line” · basket-throw data-type challenge.</figcaption></figure>
+  <h3>Mechanics in the builds</h3>
+  <ul class="ticks"><li>Character selection with outfit variants and a live sprite preview</li><li>Walk, jump and throw to choose an answer</li><li>Movement course driven by <code>velocity.x = input * speed;</code></li></ul>
+  <h3>My contribution</h3>
+  <p>I'm the team's <strong>UI/UX Developer</strong>. That covers the screens and interface players use: the character selection screen, the HUD (health, Code Stars, route progress, level indicator) and the objective and code panels that explain each challenge.</p>
+  <p style="margin-top:20px"><a class="btn btn--primary btn--sm" href="projects/capstone.html">Open the full capstone case study <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+</template>
+
+<template id="case-03">
+  <span class="eyebrow">Project 03 · 3D modeling</span>
+  <h2 style="margin-top:14px">Lantern Scene in Blender</h2>
+  <figure class="case__img"><img src="assets/projects/blender-lantern-scene.jpg" alt="Blender viewport of the lantern scene." loading="lazy"><figcaption>Scene in the Blender viewport — candle, oil lantern and pendant lamp on a wall shelf.</figcaption></figure>
+  <dl class="case__facts">
+    <div><dt>Tool</dt><dd>Blender</dd></div>
+    <div><dt>Timeline</dt><dd>150 frames</dd></div>
+    <div><dt>Mood</dt><dd>Low-key, warm</dd></div>
+    <div><dt>My role</dt><dd>Individual project</dd></div>
+  </dl>
+  <h3>My role</h3>
+  <p>An individual project. I modeled, lit, simulated and animated the whole scene myself.</p>
+  <h3>What went into it</h3>
+  <ul class="ticks">
+    <li><b>Modeling</b> — lantern, candle, shelf and pendant globe built as separate objects.</li>
+    <li><b>Lighting</b> — warm point lights and an emissive globe create a low-key, cozy mood.</li>
+    <li><b>Simulation</b> — smoke domains add drifting smoke above the flames.</li>
+    <li><b>Animation</b> — 150-frame timeline with the camera placed for a close shot.</li>
+  </ul>
+  <h3>More renders</h3>
+  <div class="placeholder-note"><svg aria-hidden="true"><use href="#i-info"/></svg><span><strong>To add:</strong> final rendered stills or the exported animation, plus any other Blender models.</span></div>
+</template>
+
+<template id="case-04">
+  <span class="eyebrow eyebrow--teal">Project 04 · CloudSwyft internship</span>
+  <h2 style="margin-top:14px">LMS Website QA &amp; UI Audit</h2>
+  <p style="margin-top:14px">Objective: confirm that CloudSwyft's learning-management website works, reads clearly and behaves consistently, and document it so the team can act.</p>
+  <h3>Process</h3>
+  <ol class="steps">
+    <li><b>Scope</b>Map pages and features to test</li>
+    <li><b>Write cases</b>Front-end and back-end test cases</li>
+    <li><b>Execute</b>Run each case and record pass/fail</li>
+    <li><b>Log findings</b>Note issues and UI inconsistencies</li>
+    <li><b>Document</b>Outline technical documentation</li>
+  </ol>
+  <h3>My contribution</h3>
+  <p>Built and maintain the QA Audit Form in Google Sheets, with a cover sheet plus front-end and back-end test cases. Drafting the outline of the LMS technical documentation, using the existing CloudSwyft website tech doc as reference.</p>
+  <h3>Key learning</h3>
+  <p>Good QA is about clear, repeatable steps. A well-written test case lets anyone reproduce an issue.</p>
+  <figure class="case__img"><img src="assets/projects/cloudswyft-qa-audit-form.jpg" alt="QA Audit Form in Google Sheets with front-end test cases for the CloudSwyft LMS." loading="lazy"><figcaption>The QA Audit Form in Google Sheets, front-end cases.</figcaption></figure>
+  <h3>What each case records</h3>
+  <p>QIRI ID, module, test scenario, pre-conditions, test steps, expected result, status (Pass / Fail / N/A), severity and a recommendation. Cases cover the universal header and footer, branding and the landing page, checked on desktop and mobile widths.</p>
+</template>
+
+<template id="case-05">
+  <span class="eyebrow eyebrow--teal">Project 05 · CloudSwyft internship</span>
+  <h2 style="margin-top:14px">CRM Documentation &amp; Lead Workflows</h2>
+  <p style="margin-top:14px">Documenting how leads move through CloudSwyft's CRM, a Power Apps canvas app, so the business team shares one clear picture of the process.</p>
+  <figure class="case__img"><img src="assets/projects/cloudswyft-crm-dashboard.jpg" alt="CloudSwyft CRM dashboard screen in Power Apps." loading="lazy"><figcaption>Dashboard screen of the CloudSwyft CRM in Power Apps Studio. Lead names and emails are blurred.</figcaption></figure>
+  <h3>Dashboard panels documented</h3>
+  <div class="chips"><span class="chip">Leads</span><span class="chip">Customer Satisfaction Score</span><span class="chip">Yearly On-boarded Clients</span><span class="chip">Response Time</span><span class="chip">Click-Through Rate</span><span class="chip">Handling Time</span></div>
+  <h3>App screens</h3>
+  <div class="chips"><span class="chip">Dashboard</span><span class="chip">Sales Flow</span><span class="chip">Sales Team</span><span class="chip">Accounts</span><span class="chip">Lead Profile</span><span class="chip">Revenue Comms</span><span class="chip">Client Cost Value</span><span class="chip">Customer Support</span><span class="chip">Staff Logs</span></div>
+  <h3>Lead workflow</h3>
+  <ol class="steps" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+    <li><b>Lead capture</b>A new lead enters the CRM</li>
+    <li><b>Qualification</b>Is it a fit?</li>
+    <li><b>Opportunity</b>Qualified lead becomes an opportunity</li>
+    <li><b>Conversion &amp; follow-up</b>Close and keep in touch</li>
+  </ol>
+  <h3>What I documented</h3>
+  <ul class="ticks">
+    <li><b>Data layer</b> — Dataverse-related tables and fields</li>
+    <li><b>Dashboards &amp; KPIs</b> — dashboard views and key metrics</li>
+    <li><b>Process evaluation</b> — gaps and improvement points in the lead workflow</li>
+  </ul>
+  <h3>Key learning</h3>
+  <p>Translating a business process into clear documentation is a technical skill of its own.</p>
+  <div class="placeholder-note" style="margin-top:20px"><svg aria-hidden="true"><use href="#i-lock"/></svg><span><strong>Confidentiality:</strong> CRM records, client names and internal dashboards are not shown.</span></div>
+</template>
+
+<template id="case-06">
+  <span class="eyebrow eyebrow--teal">Project 06 · CloudSwyft internship</span>
+  <h2 style="margin-top:14px">Evaluating the Sites That You See</h2>
+  <p style="margin-top:14px"><em>Think Before You Trust: Kai's Online Search</em> is an illustrated eBook I wrote for CloudSwyft. It teaches readers to check a website before trusting it, through a student named Kai researching study habits online.</p>
+  <figure class="case__img"><img src="assets/projects/cloudswyft-ebook-cover.jpg" alt="eBook cover with the title Evaluating the Sites That You See." loading="lazy"><figcaption>Cover page, 1 of 10.</figcaption></figure>
+  <dl class="case__facts">
+    <div><dt>Format</dt><dd>Interactive web eBook</dd></div>
+    <div><dt>Length</dt><dd>10 pages</dd></div>
+    <div><dt>My role</dt><dd>Author</dd></div>
+    <div><dt>Tool</dt><dd>Inkbug</dd></div>
+  </dl>
+  <h3>What the reader learns</h3>
+  <ul class="ticks"><li>Check who the <b>author</b> is</li><li>Check the <b>date</b> the information was published</li><li>Look at the <b>sources</b> behind the claims</li><li><b>Compare</b> with official and trusted websites</li></ul>
+  <h3>Reader features</h3>
+  <p>Page-by-page navigation, a page grid, full-screen reading and English narration.</p>
+  <div class="placeholder-note" style="margin-top:20px"><svg aria-hidden="true"><use href="#i-info"/></svg><span><strong>To add:</strong> more page screenshots, or a link to the published eBook.</span></div>
+</template>
+
+<template id="case-07">
+  <span class="eyebrow eyebrow--teal">Project 07 · CloudSwyft internship</span>
+  <h2 style="margin-top:14px">Beyond Transactions: 33 Rewards System</h2>
+  <p style="margin-top:14px">A proposal I prepared for CloudSwyft Marketing on integrating the 33 Rewards System across CloudSwyft's programs. It maps all 33 rewards into six categories and sets out how the company could test and roll them out.</p>
+  <dl class="case__facts">
+    <div><dt>Format</dt><dd>Canva deck, 35 slides</dd></div>
+    <div><dt>Audience</dt><dd>CloudSwyft Marketing</dd></div>
+    <div><dt>My role</dt><dd>Author</dd></div>
+    <div><dt>Status</dt><dd>Proposal</dd></div>
+  </dl>
+  <figure class="case__img"><img src="assets/projects/cloudswyft-rewards-six-categories.jpg" alt="Six Reward Categories slide." loading="lazy"><figcaption>Six reward categories, all 33 rewards: 8 + 7 + 5 + 4 + 4 + 5.</figcaption></figure>
+  <h3>The six categories</h3>
+  <div class="chips"><span class="chip">#1–8 Purchase-Based</span><span class="chip">#9–15 Exclusive Access</span><span class="chip">#16–20 Engagement</span><span class="chip">#21–24 Referral &amp; People</span><span class="chip">#25–28 Fun Surprises</span><span class="chip">#29–33 Retention</span></div>
+  <figure class="case__img"><img src="assets/projects/cloudswyft-rewards-roadmap.jpg" alt="Implementation Roadmap slide with five phases." loading="lazy"><figcaption>Five-phase implementation roadmap.</figcaption></figure>
+  <h3>Implementation roadmap</h3>
+  <ol class="steps">
+    <li><b>Validate &amp; Map</b>Map all 33 rewards to programs and client segments</li>
+    <li><b>Pilot</b>8–10 high-fit rewards with 3–5 willing partners</li>
+    <li><b>Track</b>Confirm what LMS, CRM and reporting tools can record</li>
+    <li><b>Launch &amp; Communicate</b>Rules page, FAQ, team training</li>
+    <li><b>Evaluate &amp; Expand</b>Quarterly scorecard and client feedback</li>
+  </ol>
+  <p style="margin-top:16px">Each phase has a lead team, a deliverable and a gate to pass before the next one. Timing is left to management, and no LMS or CRM integration is assumed until confirmed.</p>
+</template>
+
+<!-- dialogs -->
+<dialog class="case" id="case-dialog" aria-labelledby="case-dialog-title">
+  <div class="case__head"><span class="eyebrow" id="case-dialog-title">Case study</span><button class="case__close" type="button" data-close aria-label="Close project details"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
+  <div class="case__body" id="case-body"></div>
+</dialog>
+
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <div class="lb-top"><button class="icon-btn" type="button" data-close aria-label="Close image viewer"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <p class="lb-cap"><span id="lb-cap"></span><small id="lb-count"></small></p>
+  <button class="icon-btn lb-prev" type="button" aria-label="Previous image"><svg aria-hidden="true"><use href="#i-chev-left"/></svg></button>
+  <button class="icon-btn lb-next" type="button" aria-label="Next image"><svg aria-hidden="true"><use href="#i-chev-right"/></svg></button>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+<script src="js/interactions.js"></script>
+</body>
+</html>
