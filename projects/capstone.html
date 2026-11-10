@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ArcadeCode Capstone · Justine Mico San Jose</title>
+  <meta name="description" content="ArcadeCode — a group capstone educational pixel-art coding game built in Unity and C#. Character selection, programming challenges, movement mechanics and development progress.">
+  <meta name="author" content="Justine Mico San Jose">
+  <meta property="og:title" content="ArcadeCode — Educational Pixel-Art Coding Game">
+  <meta property="og:image" content="../assets/capstone/basket-throw-challenge.jpg">
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;600&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="../index.html" aria-label="Justine Mico San Jose, home">
+      <span class="brand__mark">JM</span><span class="brand__name">Justine Mico <span>San Jose</span></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="capstone.html" class="is-active" aria-current="page">Capstone</a></li>
+        <li><a href="cloudswyft.html">Internship</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="../index.html">Home</a> <span aria-hidden="true">/</span> <a href="../index.html#work">Work</a> <span aria-hidden="true">/</span> <span>Capstone</span></p>
+      <h1>ArcadeCode: learning to code through play.</h1>
+      <p class="lede">An educational pixel-art coding game and my 4th-year BSIT group capstone. Players run and jump through a side-scrolling city and clear each route by solving programming challenges built into the level itself.</p>
+      <div class="chips" style="margin-top:22px"><span class="chip chip--blue">Group project</span><span class="chip chip--teal">My role: UI/UX Developer</span><span class="chip">Unity</span><span class="chip">C#</span><span class="chip">Browser-based build</span><span class="chip chip--plan">In development</span></div>
+      <ul class="toc" aria-label="On this page">
+        <li><a href="#overview"><span class="n">A</span>Overview</a></li>
+        <li><a href="#characters"><span class="n">B</span>Character selection</a></li>
+        <li><a href="#gameplay"><span class="n">C</span>Gameplay</a></li>
+        <li><a href="#challenges"><span class="n">D</span>Programming challenges</a></li>
+        <li><a href="#movement"><span class="n">E</span>Movement</a></li>
+        <li><a href="#tech"><span class="n">F</span>Technology</a></li>
+        <li><a href="#objectives"><span class="n">G</span>Learning objectives</a></li>
+        <li><a href="#progress"><span class="n">H</span>Progress</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- A -->
+  <section class="cs-section" id="overview">
+    <div class="wrap cs-grid">
+      <p class="cs-label">A<b>Project overview</b></p>
+      <div class="cs-body">
+        <figure class="shot"><button type="button" data-lightbox="cap" data-src="../assets/capstone/basket-throw-challenge.jpg" data-caption="Stage 1 “The First Line” — basket-throw data-type challenge"><img src="../assets/capstone/basket-throw-challenge.jpg" width="1258" height="711" alt="ArcadeCode Stage 1: a pixel-art character on a dark city platform facing three answer baskets labelled int, float and string." fetchpriority="high"></button><figcaption>Actual development build · Stage 1 “The First Line”</figcaption></figure>
+        <p>ArcadeCode turns beginner programming topics into small, playable puzzles. Instead of reading a question and picking an answer from a list, the player answers by doing something in the level: throwing into the right basket or moving the character the way a line of code says it should.</p>
+        <div class="tech-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))">
+          <div class="tech"><b>Explore</b><h3>Platform levels</h3><p>Move through levels with keyboard and mouse controls.</p></div>
+          <div class="tech"><b>Solve</b><h3>Act out the answer</h3><p>Throw, place or move to answer coding questions.</p></div>
+          <div class="tech"><b>Progress</b><h3>Code Stars</h3><p>Earn Code Stars and advance the route.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- B -->
+  <section class="cs-section" id="characters">
+    <div class="wrap cs-grid">
+      <p class="cs-label">B<b>Character selection</b></p>
+      <div class="cs-body">
+        <h2>Choose your coder.</h2>
+        <figure class="shot"><button type="button" data-lightbox="cap" data-src="../assets/capstone/character-selection.jpg" data-caption="New Campaign — Choose Your Coder: Maya and Kai, Red or White uniform"><img src="../assets/capstone/character-selection.jpg" width="1258" height="707" loading="lazy" alt="Character selection screen with Maya and Kai cards, Red and White outfit buttons and a large sprite preview."></button><figcaption>Actual in-game screen · New Campaign</figcaption></figure>
+        <ol class="annot">
+          <li><span class="n">1</span><div><b>Two playable coders</b><span>Maya and Kai, drawn as pixel-art sprites</span></div></li>
+          <li><span class="n">2</span><div><b>Selection cards</b><span>The highlighted card shows the current choice</span></div></li>
+          <li><span class="n">3</span><div><b>Outfit options</b><span>Red or White variants of the school uniform</span></div></li>
+          <li><span class="n">4</span><div><b>Live preview</b><span>A large sprite shows the chosen look before confirming</span></div></li>
+          <li><span class="n">5</span><div><b>Simple controls</b><span>Arrows to select, Enter to choose, Esc to go back</span></div></li>
+        </ol>
+        <p>Letting players pick and style a character builds a sense of ownership from the very first screen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- C -->
+  <section class="cs-section" id="gameplay">
+    <div class="wrap cs-grid">
+      <p class="cs-label">C<b>Gameplay mechanics</b></p>
+      <div class="cs-body">
+        <h2>Questions you answer with your feet.</h2>
+        <p>Levels are side-scrolling platform stages set against a night-time city skyline and docks. The player walks, jumps and interacts with objects placed in the level. Each object stands for an answer, so the mechanics and the lesson are the same action.</p>
+        <div class="tech-grid">
+          <div class="tech"><b>Throw</b><h3>Basket throw</h3><p>Throw into the basket that holds the correct answer.</p></div>
+          <div class="tech"><b>Move</b><h3>Movement course</h3><p>Move in the direction the code describes, past barriers and hazards.</p></div>
+          <div class="tech"><b>Reward</b><h3>Route progress</h3><p>Correct actions restore the route and award Code Stars.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- D -->
+  <section class="cs-section" id="challenges">
+    <div class="wrap cs-grid">
+      <p class="cs-label">D<b>Programming challenges</b></p>
+      <div class="cs-body">
+        <h2>Which type stores a fractional speed?</h2>
+        <figure class="shot"><button type="button" data-lightbox="cap" data-src="../assets/capstone/basket-throw-challenge.jpg" data-caption="Basket Throw — answers A int, B float, C string"><img src="../assets/capstone/basket-throw-challenge.jpg" width="1258" height="711" loading="lazy" alt="Question panel asking which type stores a fractional speed, with three baskets as answers."></button><figcaption>Stage 1 “The First Line” · Basket Throw challenge</figcaption></figure>
+        <ol class="annot">
+          <li><span class="n">1</span><div><b>Question panel</b><span>Asks a real programming question in plain words</span></div></li>
+          <li><span class="n">2</span><div><b>Answers as platforms</b><span>A int · B float · C string — each is a basket</span></div></li>
+          <li><span class="n">3</span><div><b>Character movement</b><span>Walk, jump and throw to choose an answer</span></div></li>
+          <li><span class="n">4</span><div><b>Code hint &amp; controls</b><span>Shows <code>___ speed = 2.5f;</code> plus key bindings</span></div></li>
+          <li><span class="n">5</span><div><b>Health indicator</b><span>The player's remaining health</span></div></li>
+          <li><span class="n">6</span><div><b>Code Stars &amp; route</b><span>Score and progress through the stage</span></div></li>
+        </ol>
+        <pre class="codeblock"><span class="c">// The blank in the hint panel…</span>
+___ speed = <span class="n">2.5f</span>;
+
+<span class="c">// …is a float: the only one of the three that holds a decimal value</span>
+<span class="k">float</span> speed = <span class="n">2.5f</span>;</pre>
+        <p>The challenge teaches a data-type decision in the same context it is used in games: storing a speed that isn't a whole number.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- E -->
+  <section class="cs-section" id="movement">
+    <div class="wrap cs-grid">
+      <p class="cs-label">E<b>Movement mechanics</b></p>
+      <div class="cs-body">
+        <h2>Move left past the signal, then reach the dock.</h2>
+        <figure class="shot"><button type="button" data-lightbox="cap" data-src="../assets/capstone/movement-course.jpg" data-caption="Level 1 “Movement Failure” — Movement Course"><img src="../assets/capstone/movement-course.jpg" width="1258" height="706" loading="lazy" alt="Movement course with a '-1 LEFT' marker, a red laser barrier, an enemy and a TypeError bar."></button><figcaption>Level 1 “Movement Failure” · Movement Course</figcaption></figure>
+        <pre class="codeblock"><span class="p">velocity</span>.x = <span class="k">input</span> * <span class="n">speed</span>;
+<span class="c">// input is -1 (left) or +1 (right)</span>
+<span class="c">// multiplying by speed sets both direction and how fast the character moves</span></pre>
+        <ol class="annot">
+          <li><span class="n">1</span><div><b>Feedback message</b><span>“Code applied! Route restored.”</span></div></li>
+          <li><span class="n">2</span><div><b>Objective</b><span>Move left past the signal, then reach the dock</span></div></li>
+          <li><span class="n">3</span><div><b>Direction marker</b><span>“-1 LEFT” shows the input value in the world</span></div></li>
+          <li><span class="n">4</span><div><b>Barrier</b><span>A red laser barrier blocks the route</span></div></li>
+          <li><span class="n">5</span><div><b>Enemy &amp; TypeError bar</b><span>Hazards the player must get past</span></div></li>
+          <li><span class="n">6</span><div><b>Route progress</b><span>Route 4/8 and 17 Code Stars earned</span></div></li>
+        </ol>
+        <p>The line of code is the same one that moves the character. When the player sees “-1 LEFT” in the world and the sprite moves left, the multiplication stops being abstract.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- F -->
+  <section class="cs-section" id="tech">
+    <div class="wrap cs-grid">
+      <p class="cs-label">F<b>Development &amp; technologies</b></p>
+      <div class="cs-body">
+        <h2>How the game is built.</h2>
+        <div class="tech-grid">
+          <div class="tech"><b>Game engine</b><h3>Unity</h3><p>Screenshots show Unity “Development Build” watermarks.</p></div>
+          <div class="tech"><b>Programming language</b><h3>C#</h3><p>Game logic written in C# in Unity.</p></div>
+          <div class="tech"><b>Target platform</b><h3>Browser-based build</h3><p>Per the project title, “Interactive Browser-Based Gamified Coding Platform”.</p></div>
+          <div class="tech"><b>Characters &amp; environment</b><h3>Pixel-art sprites</h3><p>Maya and Kai, docks and skyline backdrops.</p></div>
+          <div class="tech"><b>User interface</b><h3>HUD &amp; code panels</h3><p>Health, Code Stars, route and objective displays.</p></div>
+          <div class="tech"><b>Challenge design</b><h3>Questions tied to actions</h3><p>Throwing, carrying, placing and moving answer questions.</p></div>
+          <div class="tech"><b>Testing &amp; evaluation</b><h3>ISO/IEC 25010 survey</h3><p>Evaluation form prepared; results to be added.</p></div>
+          <div class="tech tech--todo"><b>System architecture</b><h3>To be documented</h3><p>Back end for the dashboard and leaderboards is not documented here yet.</p></div>
+        </div>
+        <div class="tech" style="border-color:#cbd8f5;background:var(--blue-tint)"><b>My role</b><h3>UI/UX Developer</h3><p>I work on what players see and use: the character selection screen, the HUD (health, Code Stars, route progress, level indicator) and the objective and code panels. The rest of the game is a team effort.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- G -->
+  <section class="cs-section" id="objectives">
+    <div class="wrap cs-grid">
+      <p class="cs-label">G<b>Learning objectives</b></p>
+      <div class="cs-body">
+        <h2>Why an educational game?</h2>
+        <div class="tech-grid">
+          <div class="tech"><b>01</b><h3>Make programming interactive</h3><p>Turn abstract syntax into actions on screen.</p></div>
+          <div class="tech"><b>02</b><h3>Encourage problem-solving</h3><p>Each route is a small puzzle to reason through.</p></div>
+          <div class="tech"><b>03</b><h3>Connect logic to gameplay</h3><p>Code like velocity.x = input * speed visibly moves the player.</p></div>
+          <div class="tech"><b>04</b><h3>Keep learners engaged</h3><p>Characters, levels and rewards keep players going.</p></div>
+          <div class="tech"><b>05</b><h3>Progressive learning</h3><p>Stages build from data types to movement logic.</p></div>
+          <div class="tech"><b>In the game now</b><h3>Concepts covered</h3><p>Data types (int, float, string) · movement (velocity, input, speed).</p></div>
+        </div>
+        <dl class="case__facts" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+          <div><dt>Expected</dt><dd style="font-weight:500">Higher engagement with beginner programming topics and better recall of syntax through practice in context.</dd></div>
+          <div><dt>Measured</dt><dd style="font-weight:500">Not yet measured. Results will come from the ISO/IEC 25010 evaluation survey.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- H -->
+  <section class="cs-section" id="progress">
+    <div class="wrap cs-grid">
+      <p class="cs-label">H<b>Development progress</b></p>
+      <div class="cs-body">
+        <h2>Where the project stands.</h2>
+        <p>Playable development builds include character selection, Stage 1 programming challenges and a Level 1 movement course, each with an in-game HUD.</p>
+        <div class="progress-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))">
+          <article class="p-card"><button type="button" data-lightbox="prog" data-src="../assets/capstone/character-selection.jpg" data-caption="Built — Character selection"><img src="../assets/capstone/character-selection.jpg" alt="Character selection screen." loading="lazy"></button><div class="b"><span class="chip chip--teal">Built</span><h3>Character selection</h3><p>Maya &amp; Kai, outfits, preview</p></div></article>
+          <article class="p-card"><button type="button" data-lightbox="prog" data-src="../assets/capstone/basket-throw-challenge.jpg" data-caption="Built — Programming challenge"><img src="../assets/capstone/basket-throw-challenge.jpg" alt="Basket throw challenge." loading="lazy"></button><div class="b"><span class="chip chip--teal">Built</span><h3>Programming challenge</h3><p>Data-type basket throw</p></div></article>
+          <article class="p-card"><button type="button" data-lightbox="prog" data-src="../assets/capstone/movement-course.jpg" data-caption="Built — Movement mechanics"><img src="../assets/capstone/movement-course.jpg" alt="Movement course." loading="lazy"></button><div class="b"><span class="chip chip--teal">Built</span><h3>Movement mechanics</h3><p>Velocity &amp; input course</p></div></article>
+        </div>
+        <h2 style="font-size:var(--t-lg);margin-top:40px">Planned features</h2>
+        <p>From the project scope. These are future plans, not finished features.</p>
+        <ul class="planned">
+          <li class="chip chip--plan">Boss battles</li><li class="chip chip--plan">XP &amp; badges</li><li class="chip chip--plan">Leaderboards</li>
+          <li class="chip chip--plan">Instructor dashboard</li><li class="chip chip--plan">C# and Java tracks</li><li class="chip chip--plan">ISO/IEC 25010 evaluation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap next-prev">
+    <a class="btn btn--ghost" href="../index.html#work"><svg aria-hidden="true" style="transform:scaleX(-1)"><use href="#i-arrow"/></svg> All projects</a>
+    <a class="btn btn--primary" href="cloudswyft.html">Next: CloudSwyft internship <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p>© <span data-year>2026</span> Justine Mico San Jose. ArcadeCode is a group capstone project; screenshots are from development builds.</p>
+    <p><a href="../index.html#contact">Get in touch</a></p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top"><svg aria-hidden="true"><use href="#i-up"/></svg></button>
+
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <div class="lb-top"><button class="icon-btn" type="button" data-close aria-label="Close image viewer"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
+  <div class="lb-stage"><img id="lb-img" alt=""></div>
+  <p class="lb-cap"><span id="lb-cap"></span><small id="lb-count"></small></p>
+  <button class="icon-btn lb-prev" type="button" aria-label="Previous image"><svg aria-hidden="true"><use href="#i-chev-left"/></svg></button>
+  <button class="icon-btn lb-next" type="button" aria-label="Next image"><svg aria-hidden="true"><use href="#i-chev-right"/></svg></button>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="../js/main.js"></script>
+<script src="../js/interactions.js"></script>
+</body>
+</html>
